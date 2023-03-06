@@ -1,6 +1,7 @@
 public static class Sorting
 {
-    public static void SortSelection(int[] collection)
+    // public static void SortSelection(int[] collection)
+    public static int[] SortSelection(this int[] collection)
   {
     int size = collection.Length;
     for (int i = 0; i < size - 1; i++)
@@ -14,5 +15,6 @@ public static class Sorting
       collection[i] = collection[pos];
       collection[pos] = temp;
     }
+    return collection;
   }
 }
